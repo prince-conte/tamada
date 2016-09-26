@@ -1,0 +1,63 @@
+doctype html
+html(lang="ru")
+    head
+        include include/head.jade
+    body
+        header
+            .content
+                .logo-block
+                    .middle
+                        a.logo
+                .nav-block
+                    .middle
+                        nav
+                            a(href="#") Услуги
+                            a(href="#") Портфолио
+                            a(href="#") Истории наших влюбленных
+                            a(href="#") Статьи
+                            a(href="#") Новости
+                            a(href="#") Контакты
+                .phone-block
+                    .middle
+                        a.button 
+                            .phbg
+                            span Заказать звонок
+                        a.phone +7(495)7902981
+        section.home
+            .home-slider
+                .home-slider-slide-bg(style="background: url(img/slide-1);")
+                .content
+                    .home-slider__slider
+                        .home-slider__slider__item
+                        
+            a.arrow.prev
+                .phbg
+                .ico
+                                       
+            a.arrow.next
+                .phbg
+                .ico
+                
+            .arrow-dots
+                a.active
+                a
+                a
+                a
+                a
+                
+                                    
+            a.arrow-bot
+                .phbg
+                .ico
+                
+            .block-lenta
+                img(src="img/lenta.png")
+                
+        include include/index-about-block.jade 
+        include include/index-slider-video-block.jade 
+            
+                            
+                            
+                            
+                            
+                            
