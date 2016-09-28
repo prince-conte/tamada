@@ -13,7 +13,7 @@ h6 {font-size: 13px;}
 
 .content {width: 1240px; position: relative; display: block; margin: 0 auto;}
 
-section {float: left; width: 100%;}
+section, footer {float: left; width: 100%;}
 
 
 
@@ -28,23 +28,24 @@ section {float: left; width: 100%;}
 .prev {left:225px;}    
 .next {right:225px; .pov5;}  
  
-
+.block-lenta {position: absolute; display: block; width: 100%; bottom: -200px; left:0px; 
+        img {width: 100%; height: auto;}}
 
 
 
 
 // header
 header {position: absolute; display: block; width: 100%; height: 100px; top:0px; left:0px; z-index: 99999;
-    .content{ height: 100%;}
+    .content{ height: 100%; width: 80%;}
 // logo
 .logo-block{float: left; width: 20%; height: 100%; display: inline-table;
-.logo {height: 60px; width: 160px; float: left; .bgCCC; background: url(../img/logo.png);}        
+.logo {height: 85px; width: 160px; float: left; .bgCCC; background: url(../img/logo.png);}        
 }
     
 // nav    
 .nav-block {width: 60%; height: 100%; float: left; position: relative; display: inline-table;
 nav {position: relative; display: block; margin: 0 auto; text-align: center;
-a {margin: 0 22px; color: #fff; font-size: 18px; .m-speed;}
+a {margin: 0 22px; color: #fff; font-size: 22px; .m-speed;}
 a:hover {color: @colfirm;}    
 }    
 }    
@@ -53,9 +54,9 @@ a:hover {color: @colfirm;}
 // phone-block
     
 .phone-block {float: right; width: 20%; height: 100%; display: inline-table;
-a.phone {display: inline-block; float: right; font-size: 20px; color: #fff; margin-top: 10px;}    
+a.phone {display: inline-block; float: right; font-size: 24px; color: #fff; margin-top: 10px;}    
 .button {position: relative; display: inline-block; float: right; margin-left: 30px; font-size: 14px; border: solid 2px #fff; border-radius: 12px;.med-speed; padding: 0px; 
-span {z-index: 99999;  padding: 11px 22px; color: #fff; display: inline-block; position: relative;}
+span {z-index: 99999;  padding: 11px 22px; color: #fff; display: inline-block; position: relative; font-size: 18px;}
 .phbg  {position: absolute; display: block; width: 100%; height:100%; top:0px; left:0px; background: #fff; opacity: .2; .med-speed; border-radius: 12px;}
 } 
     .button:hover { border: solid 2px @colfirm2; .phbg {opacity: .7} span{color: @colfirm2;} }
@@ -71,7 +72,9 @@ span {z-index: 99999;  padding: 11px 22px; color: #fff; display: inline-block; p
 .home-slider {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px;
 .home-slider-slide-bg {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; .bgCC; background: url(../img/slide-1);}
 .home-slider__slider {position: relative; display: block; width: 100%; float: left; height: 470px;  border-radius: 15px; overflow: hidden;
-.home-slider__slider__item {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; .bgCC; background: url(../img/slide1.jpg)}   
+.home-slider__slider__item {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px; .bgCC; background: url(../img/slide1.jpg);
+    .title {position: absolute; display: block; bottom: 35px; left: 25px; color:#fff; font-size: 55px;}    
+}   
 }
 }
 
@@ -251,12 +254,12 @@ padding-right: 10px;}
 
 // ________________________________sayavka index page____________________________________________________//
 
-.sayavka {background: url(../img/bgwtfs.png); .bgTC; height: 950px;
+.sayavka {background: url(../img/bgwtfs.png); .bgTC; height: 980px;
 .sayavka__form-block {width: 50%; float: right; display: table; height: 950px;
-.sayavka__form-block__dis {background-color: rgb(255, 255, 255); position: relative; padding: 35px;
+.sayavka__form-block__dis {background-color: rgb(255, 255, 255); position: relative; padding: 15px 35px;
 box-shadow: 0px 0px 76px 0px rgba(0, 0, 0, 0.14);
 width: 490px;
-height: 275px; background: #fff; border-radius: 25px;
+height: 300px; background: #fff; border-radius: 25px;
     
     
 .mol-ico {position: absolute; display: block; width: 70px; height: 70px; top:-35px; left:50%; margin-left: -35px; .bgCCC; background: url(../img/moln.png);}
@@ -265,14 +268,142 @@ height: 275px; background: #fff; border-radius: 25px;
 background: #fff; font-style: italic; text-align: center; padding: 15px 15px 0; position: relative;}
 .title::before {content: ''; position: absolute; display: block; width: 100%; height: 1px; background: #ebc3e6; top:31px; left: 0px;}
 .txt {font-size: 24px; text-align: center; display: block; float: left; width: 100%; margin-top: 15px;}
+    
+.inp-txt {float: left; width: 50%; padding-right: 5px;}
+.inp-txt:last-child{padding-right: 0px; padding-left: 5px;}
+input {width: 100%; border: solid 2px #ffd0f9; border-radius: 10px;  padding: 12px 20px; font-size: 20px; margin-top: 20px;}
+::-webkit-input-placeholder {color:#ffd0f9;}
+::-moz-placeholder          {color:#ffd0f9;}/* Firefox 19+ */
+:-moz-placeholder           {color:#ffd0f9;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#ffd0f9;} 
+.send {float: left; width: 100%; color: #fff; font-size: 20px; text-align: center; padding: 12px; background: #d845a2; border: solid 0px;}
+.send:hover {background: #d859a9;}
 
+}}}
+
+
+
+
+
+
+
+
+
+// ________________________________article-home-block articles page____________________________________________________//
+
+
+.article-home-block { height: 600px; .bgCC; position: relative; background: url(../img/art-bg.jpg);
+.content {}
+h1 {float: left; width: 100%; font-size: 64px; color: #fff; text-align: left; font-weight: 600;  margin-top: 170px;}   
+    
+}
+
+
+// ________________________________art-block articles page____________________________________________________//
+
+.art-block { float: left; margin-bottom: 75px; margin-top: -250px;
+.article-block{ float: left; width: 100%;
+.article-block__one{ width: 50%; border: solid 12px transparent; height: 100%; position: relative; float: left; height: 680px; 
+.fade {position: absolute; display: block; top:0px; left:0px; width: 100%; height: 100%; box-shadow: 0px 0px 40px 0px rgba(6, 6, 6, 0.13);
+ border-top-left-radius: 25px; border-top-right-radius: 25px;  border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;    
+}
+.article-block__one__image {float: left; width: 100%; height: 50%;.bgCC; background: url(../img/article.jpg);  border-top-left-radius: 25px; border-top-right-radius: 25px;}
+.article-block__one__txt { padding: 25px;  float: left; width: 100%; height: 50%; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px;
+.title {float: left; width: 100%; margin-bottom: 15px; font-size: 25px;}
+.date  {float: left; width: 100%; display: block; font-size: 18px; color: #dc4bbd; margin-bottom: 15px;  font-family: @fontIT; }
+p {font-size: 18px; font-family: @fontIT; margin-bottom: 20px;}    
+
+    }    
+
+    }        
+
+.paginator { float: left; width: 100%; text-align: center; margin-top: 75px;
+a {margin: 0 15px;  display: inline-table; width: 35px; height: 35px; border-radius: 50%; text-align: center; border:solid 1px #d74eb9;
+span {color: #d74eb9; display: table-cell; vertical-align: middle; position: relative; margin: 0 auto; font-family: @fontIT; font-size: 18px; position: relative; top:2px;}   
+    }
+    
+a:hover {background: #d74eb9; span {color:#fff;}}
+
+.dot {border: solid 0px; width: 25px; margin: 0px; span{vertical-align: bottom; letter-spacing: 3px;}}
+}    
+    
+.prevs {margin: 0 15px;  display: inline-table; width: 12px; height: 35px; .bgCCC; background: url(../img/stick7.png); top:6px; position:relative; border: solid 0px !important;    
+    }  
+.nexts {margin: 0 15px;  display: inline-table; width: 12px; height: 35px; .bgCCC; background: url(../img/stick7.png); top:6px; position:relative; .pov5; border: solid 0px !important;    
+    }
+
+.prevs:hover {background: url(../img/stick7.png) !important;background-position: CENTER CENTER !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;}
+.nexts:hover {background: url(../img/stick7.png) !important;background-position: CENTER CENTER !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;}    
+    
+}}
+
+
+
+
+
+
+
+
+
+// ________________________________footer____________________________________________________//
+
+
+footer  { position: relative;
+.one-linked-block {float: left; width: 100%; background: #ffffff; position: relative; margin-top: 35px;
+.line {position: absolute; display: block; width: 100%; height: 1px; background: @coltxt; top:12px;}
+ul {position: relative; display: block; margin: 0 auto; background: #ffffff;  text-align: center; width: 57%;
+li {display: inline-block; margin: 0 45px;}    
+}    
+a {display:block;  font-size: 24px; } 
+}
+    
+.two-linked-block {float: left; width: 100%; height: 275px;
+    
+.footer__logo-block {    float: left; width: 255px; background-position: CENTER CENTER !important; background-repeat: no-repeat !important; background-size: contain !important; background: url(../img/logof.png); height: 225px; }   
+    
+.footer__menu-block {float: left; width: 200px; margin-left: 40px;
+ul {float: left; width: 100%;    margin-top: 12px;
+li {display: block; float: left; margin-top: 25px; width: 100%;  a {font-size: 20px; font-family: @fontIT;}}
+        }
+    }
+    
+.first { margin-left: 104px;}
+
+.footer__info-block {float: right; width: 265px; 
+    
+.footer__info-block_adr  {font-size: 20px; font-family: @fontIT; margin-top: 35px; margin-bottom: 25px;display: block;}
+.footer__info-block_cont {font-size: 20px; font-family: @fontIT; margin-bottom: 5px; display: block;}
+.social {float: left; width: 100%; padding: 15px 15px;
+ a {display: inline-block; margin: 0 10px;
+     i {font-size: 35px; color:#cc91d3; .m-speed;} 
 } 
+     a:hover {i {color: @colfirm;} }  
+} 
+    
+}    
+    
+}
+    
+.three-linked-block {float: left; width: 100%; background: #fef8ff;
+.copy {font-family: @fontIT; color: #927ca7; float: left; width: 100%; text-align: center; padding: 25px 0 15px; font-size: 15px;}    
+.ogrn {font-family: @fontIT; color: #c7b7d7; float: left; width: 100%; text-align: center; padding-bottom: 25px; font-size: 15px;} 
     
    
     
+}  
     
+
+a {.m-speed;}
+a:hover {color: @colfirm;}  
     
+.f-v {position: absolute; bottom: 0px; left:0px; display: block; width: 300px; height: 260px; background: url(../img/f-v.png); .bgCCC;}
     
 }
 
-}
+
+
+
