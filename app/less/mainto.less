@@ -17,6 +17,9 @@ section, footer {float: left; width: 100%;}
 
 
 
+
+
+
 // arrow   
 .arrow {position: absolute; display: block; width: 50px; height: 50px; overflow: hidden; top:50%; margin-top: -85px; border-radius: 50%; z-index: 9999999;
 .phbg {position: absolute; display: block; width: 100%; height: 100%; top:0px; left: 0px; background: @colfirm; opacity: .29;}
@@ -345,9 +348,53 @@ a:hover {background: #d74eb9; span {color:#fff;}}
 
 
 
+// ________________________________article page____________________________________________________//
 
 
+.article-page { min-height: 900px; position: relative;
+.article-page__img-block {float: left; width: 30%; padding-right: 60px;
+img {float: left; width: 100%; height: auto; display: block; margin-bottom: 35px; border-radius: 25px;}    
+}    
+.article-page__txt-block {float: left; width: 70%; 
+article {float: left; width: 100%;
+p {font-family: 'Open Sans', sans-serif; float: left; width: 100%; margin: 15px; color: #000; font-weight: 300;  font-size: 18px; line-height: 1.7;
+    a {color: #d746b7; text-decoration: underline;}    
+}  
+p:first-child {margin-top: 0px;}    
+p.tags {font-family: 'Open Sans', sans-serif; float: left; width: 100%; margin: 15px; color: #000; margin-top: 30px;}    
+}    
+}    
+ 
+.article-page__foot{ position: absolute; display: block; width: 100%; height: 50%; left:0px; bottom: 0px;
+ background-position: bottom CENTER !important;
+background-repeat: no-repeat !important;background-size: COVER !important;background-image: url(../img/phart.jpg);    
+    }      
+}
 
+
+// ________________________________dope-news____________________________________________________//
+
+.dope-news { min-height: 600px; margin-bottom: 95px; 
+h2 {font-family: 'Conv_pfdindisplaypro-thin', sans-serif; font-size: 54px; color: #7e5a78; margin-top: 95px; margin-bottom: 55px; }   
+.slider {float: left; width: 100%; overflow: hidden;
+.slide {float: left; width: 33.333333%; position: relative;  padding: 35px 0; height: 450px;
+
+.block-info {position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px;  border-radius: 10px;  overflow: hidden;
+.block-info_border { border: solid 25px transparent; box-shadow: 0px 0px 40px 0px rgba(6, 6, 6, 0.13); position: absolute; display: block; width: 100%; height: 100%; top:0px; left:0px;  border-radius: 10px; .m-speed; }
+    .fade {float: left; width: 100%; height: 100%; box-shadow: 0px 0px 40px 0px rgba(6, 6, 6, 0.13);}
+.block-info_image{float: left; width: 100%; height: 250px; .bgCC;  border-radius: 10px; .m-speed;}  
+    .inf {float: left; width: 100%;  padding: 0 20px;}
+h4 {font-family: 'Conv_pfdindisplaypro-thin', sans-serif; font-size:28px; color: #111; padding: 20px 0px 10px; float: left; width: 100%; text-align: left; }
+.date {font-family: 'Conv_pfdindisplaypro-thin', sans-serif; float: left; width: 100%; padding: 15px 0px 0; border-top: solid 1px #f0e7ee; color: #969696; .m-speed; font-size: 16px}
+}
+    
+
+   
+
+}    
+}   
+   
+}
 
 // ________________________________footer____________________________________________________//
 
@@ -405,5 +452,207 @@ a:hover {color: @colfirm;}
 }
 
 
+
+
+
+
+
+// home-blocks
+
+.post-home-block {height: 750px;
+    h1 {font-style: italic; font-family: @fontWTF; 
+    margin-top: 290px; }
+}
+
+
+// slick
+
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
 
 
