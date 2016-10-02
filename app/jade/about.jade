@@ -1,0 +1,80 @@
+doctype html
+html(lang="ru")
+    head
+        include include/head.jade
+    body
+        header
+            .content
+                .logo-block
+                    .middle
+                        a.logo
+                .nav-block
+                    .middle
+                        nav
+                            a(href="#") Услуги
+                            a(href="#") Портфолио
+                            a(href="#") Истории наших влюбленных
+                            a(href="#") Статьи
+                            a(href="#") Новости
+                            a(href="#") Контакты
+                .phone-block
+                    .middle
+                        a.button 
+                            .phbg
+                            span Заказать звонок
+                        a.phone +7(495)7902981
+        section.home
+            .home-slider
+                .home-slider-slide-bg
+                    .slider-services
+                        .services-vt-slider
+                        
+                            .services-vt-slider__slide#service-1(style="background: url(img/services1.jpg);")
+                                .content
+                                    article
+                                        .title.italic Денис Гришаев
+                                        p.denis.podh Основатель и Директор агентства событий для Влюблённых
+                                        p.denis.italic «Клиент- это твой друг. Он впустил тебя в свою жизнь, доверил организацию важного для него события, дал тебе возможность вместе с ним разделить эмоции от этого события – цени это!»
+
+                   
+            a.arrow-bot
+                .phbg
+                .ico
+
+
+                        
+
+            .block-lenta
+                img(src="img/lenta.png")
+        include include/art-denis.jade
+        include include/slider-content-denis.jade
+        section.ntv
+        include include/article-page2.jade
+        section.slider-video-block.non-m-t
+            .content
+                h2 Видео интервью и участие в ТВ передачах
+                
+                .slider-video-block__wrapper
+                    .slider-video-block__wrapper__item1
+                        .display(style="background: url(img/v1.png);")
+                    .slider-video-block__wrapper__item1.active
+                        .display(style="background: url(img/v1.png);")
+                            .title Директор агентства для влюблённых Денис <br> Гришаев рассказал о том, как привнести <br> романтику в отношения
+                            a.play
+                    .slider-video-block__wrapper__item1
+                        .display(style="background: url(img/v1.png);")
+                                
+            a.arrow.prev
+                .phbg
+                .ico
+                                       
+            a.arrow.next
+                .phbg
+                .ico
+        include include/sayavka.jade
+        include include/footer.jade
+                            
+                            
+                            
+                            
+                            

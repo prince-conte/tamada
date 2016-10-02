@@ -1,0 +1,95 @@
+doctype html
+html(lang="ru")
+    head
+        include include/head.jade
+    body
+        header
+            .content
+                .logo-block
+                    .middle
+                        a.logo
+                .nav-block
+                    .middle
+                        nav
+                            a(href="#") Услуги
+                            a(href="#") Портфолио
+                            a(href="#") Истории наших влюбленных
+                            a(href="#") Статьи
+                            a(href="#") Новости
+                            a(href="#") Контакты
+                .phone-block
+                    .middle
+                        a.button 
+                            .phbg
+                            span Заказать звонок
+                        a.phone +7(495)7902981
+        section.home
+            .home-slider
+                .home-slider-slide-bg
+                    .slider-services
+                        .services-vt-slider
+                        
+                            .services-vt-slider__slide#service-1(style="background: url(img/services1.jpg);")
+                                .content
+                                    article
+                                        .title Предложение<br> Руки и Сердца
+                                        p Скорее всего, ваша любимая уже подсознательно ждет этого момента. И уже готова сказать вам “Да”. Но все-таки, в глубине души мечтает о чуде, о романтике, как в красивых добрых фильмах. Не разочаруйте ее. 
+                                        p Давайте вместе сделаем этот миг самым счастливым в ее жизни!
+                                                  
+                            .services-vt-slider__slide#service-2(style="background: url(img/services1.jpg);")
+                                .content
+                                    article
+                                        .title Предложение<br> Руки и Сердца
+                                        p Скорее всего, ваша любимая уже подсознательно ждет этого момента. И уже готова сказать вам “Да”. Но все-таки, в глубине души мечтает о чуде, о романтике, как в красивых добрых фильмах. Не разочаруйте ее. 
+                                        p Давайте вместе сделаем этот миг самым счастливым в ее жизни!
+                                                  
+                            .services-vt-slider__slide#service-3(style="background: url(img/services1.jpg);")
+                                .content
+                                    article
+                                        .title Предложение<br> Руки и Сердца
+                                        p Скорее всего, ваша любимая уже подсознательно ждет этого момента. И уже готова сказать вам “Да”. Но все-таки, в глубине души мечтает о чуде, о романтике, как в красивых добрых фильмах. Не разочаруйте ее. 
+                                        p Давайте вместе сделаем этот миг самым счастливым в ее жизни!
+                                        
+                    .vertical-dots
+                        a.active
+                        a
+                        a
+                                                
+            a.arrow-bot
+                .phbg
+                .ico
+
+
+                        
+
+            .block-lenta
+                img(src="img/lenta.png")
+        include include/slider-content-services.jade
+        section.slider-video-block.non-m-t
+            .content
+                h2 Видео истории наших влюбленных
+                
+                .slider-video-block__wrapper
+                    .slider-video-block__wrapper__item1
+                        .display(style="background: url(img/v1.png);")
+                    .slider-video-block__wrapper__item1.active
+                        .display(style="background: url(img/v1.png);")
+                            .title Рыцарское Предложение руки и сердца.<br> CGM-EVENT
+                            a.play
+                    .slider-video-block__wrapper__item1
+                        .display(style="background: url(img/v1.png);")
+                                
+            a.arrow.prev
+                .phbg
+                .ico
+                                       
+            a.arrow.next
+                .phbg
+                .ico
+        include include/sayavka.jade
+        include include/footer.jade
+                            
+                            
+                            
+                            
+                            
